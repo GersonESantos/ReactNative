@@ -5,9 +5,8 @@ export const styles = {
           justifyContent: 'center'
         },
         logo: {
-          
-        
-          
+          width: 200,
+          height: 46,
         },
         img: {
           width: 160,
@@ -20,6 +19,11 @@ export const styles = {
         },
         text: {
           color: '#fff',
-          fontSize: 14}
+          fontSize: 14
+        },
+        btn: {
+           alignItems: 'center',
+           marginTop: 20
+        }
     };
 export default styles;

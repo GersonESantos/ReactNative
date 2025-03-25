@@ -7,9 +7,15 @@ function Home() {
         style={styles.bg}>
 
       <Image source={icons.logo} style={styles.logo}/>
-      <TouchableOpacity>
-        <Image source={icons.Passenger} style={icons.Passenger} />
+      <TouchableOpacity style={styles.btn} >
+        <Image source={icons.Passenger} style={styles.img} />
         <Text style={styles.title} >Passageiro</Text>
+        <Text style={styles.text}>Encontre uma carona</Text>
+      </TouchableOpacity>
+
+      <TouchableOpacity style={styles.btn} >
+        <Image source={icons.driver} style={styles.img} />
+        <Text style={styles.title} >Motorista</Text>
         <Text style={styles.text}>Encontre uma carona</Text>
       </TouchableOpacity>
     </ImageBackground>
