@@ -1,4 +1,4 @@
-export const styles = {
+lexport const styles = {
         bg: {
           flex: 1,
           alignItems: 'center',
