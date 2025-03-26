@@ -3,9 +3,9 @@ import icons from '../../constants/icons.js';
 import { styles } from './home.style.js';
 
 
-function Home() {
+function Home(props) {
 function openPassenger() {
-  Alert.alert('Abrir Passageiro')
+  props.navigation.navigate('passenger')
 }
 function openRide() {
   Alert.alert('Abrir motorista') 

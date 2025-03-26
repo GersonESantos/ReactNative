@@ -1,9 +1,9 @@
 export const styles = {
-    btnYellow: {
+  btnYellow: {
         width: 100,
         alignItems: 'center',
         justifyContent: 'center',
-        backgroundColor: '#FFD600',
+        backgroundColor: '#F7D600',
         padding: 10,
         borderRadius: 5,
     },
