@@ -5,9 +5,9 @@ export default function App() {
   return (
     <View>
       <TextInput placeholder="Digite algo..." 
-      style={styles.input}
-      keyboardType="email-address"
-      autoCapitalize="none"
+                 style={styles.input}
+                 keyboardType="email-address"
+                 autoCapitalize="none"
       
       />
     </View>
