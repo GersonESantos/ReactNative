@@ -16,6 +16,7 @@ export default function App() {
         numberOfLines={3} // Define 3 linhas visíveis
         secureTextEntry={false} // Não oculta texto (true para senhas)
         returnKeyType="done" // Muda o botão de retorno para "Concluído"
+        editable={true} 
         onSubmitEditing={() => console.log('Texto enviado:', text)} // Ação ao pressionar retorno
       />
     </View>
