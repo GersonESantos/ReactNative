@@ -1,17 +1,17 @@
-import { View, Text, StyleSheet, Image, Pressable } from "react-native";
-import React, { useState } from "react";
+import  { useState,useEffect,useRef } from "react";
+import { Image, StyleSheet, Text, View, Pressable } from "react-native";
 export default function Index() {
-    const [timeLeft, setTimeLeft] = useState(10);
-    const [timeLabel, setTimeLabel] = useState('start');
-    const [isRunning, setIsRunning] = useState(false);
+    const [timeLeft,  setTimeLeft ]   = useState(10);
+    const [timeLabel, setTimeLabel]   = useState('start');
+    const [isRunning, setIsRunning]   = useState(false);
     
     function startTimer() {
       if (!isRunning && timeLeft > 0) {
         setIsRunning(true);
         setTimeLabel('stop') 
       } else {  
-          setIsRunning(false);
-        setTimeLabel("começar");
+        setIsRunning(false);
+        setTimeLabel("Começar");
     }}
     return (
         <View style={style.container}>
@@ -24,8 +24,7 @@ export default function Index() {
         </View>
         <View style={style.actions}>
           <Text style={style.timer}>{timeLeft}</Text>
-            <Pressable 
-                style={isRunning ? style.buttonStop : style.buttonStart}
+            <Pressable style={isRunning ? style.buttonStop : style.buttonStart}
                 onPress={startTimer}>
 
                 <Text style={style.textButton}>{timeLabel}</Text>
@@ -34,9 +33,7 @@ export default function Index() {
         <View style={style.footer}>
             <Text style={style.textfooter}>Curso de react Native EAD</Text>
             <Text style={style.textfooter}>2025 Meu App</Text>
-        </View>
-
-            
+         </View>         
         </View>
     );
 }
@@ -59,11 +56,15 @@ const style = StyleSheet.create({
         color: "#FFF",
         textAlign: "center"},
     actions: {
-      
-        flexDirection: "row",
-        justifyContent: "space-between",
+        padding: 24,
+        backgroundColor: "#14448080",
+        width: "80%",
+        borderRadius: 32,
+        borderWidth: 2,
+        borderColor: "#144480",
         alignItems: "center",
-        marginTop: 24,
+        gap: 40,
+        
     },
   button: {
         backgroundColor: "#B872ff",

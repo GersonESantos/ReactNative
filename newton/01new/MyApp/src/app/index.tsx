@@ -37,21 +37,26 @@ const style = StyleSheet.create({
         fontSize: 24,
         fontWeight: "bold",
     },
+    actions: {
+        padding: 24,
+        backgroundColor: "#14448080",
+        width: "80%",
+        borderRadius: 32,
+        borderWidth: 2,
+        borderColor: "#144480",
+        alignItems: "center",
+        gap: 40,
+    },
     timer: {
         fontSize: 54,
-        fontWeight: "bold",
         color: "#FFF",
-        textAlign: "center"},
-    actions: {
-      
-        flexDirection: "row",
-        justifyContent: "space-between",
-        alignItems: "center",
-        marginTop: 24,
+        fontWeight: "bold",
+        textAlign: "center"
     },
+    
   button: {
+      padding: 24,
         backgroundColor: "#B872ff",
-        padding: 16,
         borderRadius: 32,
         marginTop: 12,
     },
