@@ -1,5 +1,5 @@
 import { View, Text, Pressable, StyleSheet } from "react-native";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function App() {
   const [likes, setLikes] = useState(0);
@@ -13,6 +13,9 @@ export default function App() {
     </View>
   );
 }
+useEffect(() => {
+  console.log("Likes changed:",);
+})
 
 const styles = StyleSheet.create({
   container: {
