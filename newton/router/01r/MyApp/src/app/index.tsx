@@ -5,10 +5,10 @@ export default function Index() {
   const router = useRouter();
 
   return (
-    <View style={{ flex: 1 }}>
+    <View style={styles.container}>
       
          
-        <Text>Entrar</Text>
+        <Text style={styles.texto}>Entrar</Text>
      
     </View>
   );
@@ -17,7 +17,7 @@ export default function Index() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '',
+    backgroundColor: 'red',
     justifyContent: 'center',
     alignItems: 'center',
     gap: 20
