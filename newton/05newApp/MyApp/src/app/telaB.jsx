@@ -1,9 +1,9 @@
 import { View, Text, StyleSheet } from 'react-native';
 
-export default function TelaA() {
+export default function TelaB() {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Bem-vindo à Tela A!</Text>
+      <Text style={styles.text}>Bem-vindo à Tela B!</Text>
     </View>
   );
 }

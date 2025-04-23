@@ -8,7 +8,10 @@ export default function Index() {
     <View style={{ flex: 1 }}>
       <Pressable style={styles.botao} onPress={() => router.push('/telaA')}>
                 <Text style={styles.texto}>Ir para Tela A</Text>
-              </Pressable>
+     </Pressable>
+     <Pressable style={styles.botao} onPress={() => router.push('/telaB')}>
+          <Text style={styles.texto}>Ir para Tela B</Text>
+        </Pressable>
          
         <Text>Entrar</Text>
      
