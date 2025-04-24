@@ -1,78 +1,53 @@
-import { View, Text, StyleSheet, Image, Pressable } from "react-native";
-export default function Index() {
-    return (
-        <View style={style.container}>
-          <View>
-            <Image source={{
-            uri: 'https://reactnative.dev/docs/assets/p_cat2.png',
-          }}
-          style={{width: 200, height: 200}}
-          />
-        </View>
-        <View style={style.actions}>
-          <Text style={style.timer}>20:00</Text>
-            <Pressable style={style.button}>
-                <Text style={style.textButton}>Pressione-me</Text>
-            </Pressable>
-        </View>
-        <View style={style.footer}>
-            <Text style={style.textfooter}>Curso de react Native EAD</Text>
-            <Text style={style.textfooter}>2025 Meu App</Text>
-        </View>
+// App.js
+import React from 'react';
+import { Provider as PaperProvider } from 'react-native-paper';
+import { DefaultTheme, configureFonts } from 'react-native-paper';
+import { StyleSheet, View, Text } from 'react-native';
+import { Button } from 'react-native-paper';
 
-            
-        </View>
-    );
+// Configuração personalizada do tema (opcional)
+const theme = {
+  ...DefaultTheme,
+  colors: {
+    ...DefaultTheme.colors,
+    primary: '#6200ee', // Cor primária personalizada
+    accent: '#03dac4',  // Cor de destaque personalizada
+  },
+};
+
+export default function App() {
+  return (
+    // Envolve o aplicativo com PaperProvider
+    <PaperProvider theme={theme}>
+      <View style={styles.container}>
+        <Text style={styles.title}>Exemplo com React Native Paper</Text>
+        {/* Exemplo de uso de um componente do React Native Paper */}
+        <Button 
+          mode="contained" 
+          onPress={() => alert('Botão pressionado!')}
+          style={styles.button}
+        >
+          Clique Aqui
+        </Button>
+      </View>
+    </PaperProvider>
+  );
 }
-const style = StyleSheet.create({
-    container: { 
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-        backgroundColor: "#021123",
-        gap: 40,    
-        },
-    title :{ 
-        color: "red", 
-        fontSize: 24,
-        fontWeight: "bold",
-    },
-    actions: {
-        padding: 24,
-        backgroundColor: "#14448080",
-        width: "80%",
-        borderRadius: 32,
-        borderWidth: 2,
-        borderColor: "#144480",
-        alignItems: "center",
-        gap: 40,
-    },
-    timer: {
-        fontSize: 54,
-        color: "#FFF",
-        fontWeight: "bold",
-        textAlign: "center"
-    },
-    
+
+// Estilos básicos
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#f5f5f5',
+  },
+  title: {
+    fontSize: 20,
+    marginBottom: 20,
+    fontWeight: 'bold',
+  },
   button: {
-      padding: 24,
-        backgroundColor: "#B872ff",
-        borderRadius: 32,
-        marginTop: 12,
-    },
-    textButton: {
-      alignItems: "center",
-        color: "#FFF",    
-        fontSize: 16,
-        fontWeight: "bold",
-        textAlign: "center",  
-    },
-    footer: {
-        marginTop: 24,
-        alignItems: "center",
-    },
-    textfooter: {
-        fontSize: 18,
-        color: "#333",
-    },
-    });
+    marginTop: 10,
+  },
+});
