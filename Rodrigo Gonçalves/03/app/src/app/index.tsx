@@ -1,6 +1,4 @@
 import { View, Text, StyleSheet, Image} from "react-native";
-import { Input } from "../components/input";
-
 export default function Index() {
   return (
     <View style={styles.container}>
@@ -10,7 +8,6 @@ export default function Index() {
         />
       <Text style={styles.title}>Entrar</Text>
       <Text style={styles.subtitle}>Acesse sua conta com email e senha</Text>
-      <Input />
     </View>
   );
 }
