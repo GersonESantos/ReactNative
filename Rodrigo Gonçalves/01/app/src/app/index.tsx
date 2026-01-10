@@ -1,8 +1,8 @@
-import { View, Text, StyleSheet } from "react-native";
+import { View, Text, StyleSheet, Image} from "react-native";
 export default function Index() {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Hello, World!</Text>
+      <Image source={require("../../assets/images/image1.png")} />
     </View>
   );
 }
@@ -13,10 +13,6 @@ const styles = StyleSheet.create({
     alignItems: "center",
     backgroundColor: "#F5FCFF",
   },
-  title: {
-    fontSize: 20,
-    textAlign: "center",
-    margin: 10,
-  },
+  
 });
 //# sourceMappingURL=index.js.map
