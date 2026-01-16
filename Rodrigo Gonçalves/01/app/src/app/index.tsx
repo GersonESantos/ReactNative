@@ -10,7 +10,10 @@ export default function Index() {
         />
       <Text style={styles.title}>Entrar</Text>
       <Text style={styles.subtitle}>Acesse sua conta com email e senha</Text>
-      <Input />
+      <View>
+        <Input />
+        <Input />
+      </View>
     </View>
   );
 }
@@ -36,7 +39,12 @@ const styles = StyleSheet.create({
         fontSize: 16,
         color: "#666",
     },  
-    
+    form:{
+        width: "100%",
+        paddingHorizontal: 20,
+        marginTop: 20,
+        gap: 10,
+    },
   
 });
 //# sourceMappingURL=index.js.map
