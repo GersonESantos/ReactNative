@@ -1,4 +1,4 @@
-import { FormStepOne } from './src/screems/FormStepOne';
+import { FormStepOne } from './src/screens/FormStepOne';
 
 export default function App() {
   return (
