@@ -1,19 +1,34 @@
 import React from 'react';
-import { TextInput, View} from 'react-native';
+import { forwardRef } from 'react';
+import { TextInput, TextInputProps, View } from 'react-native';
 import { Feather }  from '@expo/vector-icons';
 import { styles } from './styles';
+import { Controller, UseControllerProps } from 'react-hook-form';
 
 type Props = {
     icon : keyof typeof Feather.glyphMap;
-}
+    formProps: UseControllerProps<any>;
+    inputProps: TextInputProps;
+    
+};
 
-export function Input({ icon }: Props) {
+const Input = forwardRef<TextInput, Props>(({ icon, formProps, inputProps }, ref) =>{
     return (
-        <View style={styles.group}>
+        <Controller 
+        render={() => (
+            
+            <View style={styles.group}>
             <View style={styles.icon}>
-                <Feather name={icon} size={22} color="#000" />
+                <Feather name={icon} size={22} color="#eb1111" />
              </View>   
-            <TextInput style={styles.control} />
+            <TextInput 
+            ref={ref}
+            style={styles.control} 
+            {...inputProps} />
         </View> 
-    )
-}
+    )}   
+    {...formProps}
+    />
+    );
+});
+export { Input };

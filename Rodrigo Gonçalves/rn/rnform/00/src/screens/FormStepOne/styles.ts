@@ -7,20 +7,14 @@ export const styles = StyleSheet.create({
     backgroundColor: "#f4f5f6",
     alignItems: "center",
     justifyContent: "center",
+    padding: 24,
+    gap: 16,
   },
   title: {
     fontSize: 24,
-    fontWeight: "bold",
+    fontWeight: "700",
+    marginBottom: 44,
   },
-  group: {
-    width: '100%',
-    height: 50,
-    backgroundColor: "#FFF",
-  },
-  control: {
-    height: 50,
-    width: 300,
-    backgroundColor: "#fff",
-  },
+  
 });
 
