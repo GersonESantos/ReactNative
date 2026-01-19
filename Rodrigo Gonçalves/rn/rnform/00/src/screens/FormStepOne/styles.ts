@@ -12,5 +12,15 @@ export const styles = StyleSheet.create({
     fontSize: 24,
     fontWeight: "bold",
   },
+  group: {
+    width: '100%',
+    height: 50,
+    backgroundColor: "#FFF",
+  },
+  control: {
+    height: 50,
+    width: 300,
+    backgroundColor: "#fff",
+  },
 });
 

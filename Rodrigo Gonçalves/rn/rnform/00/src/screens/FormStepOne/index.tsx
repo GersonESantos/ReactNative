@@ -1,4 +1,5 @@
 import { Text, View } from "react-native";
+import React from "react";
 import { styles } from "./styles";
 import { Input } from "../../components/input";
 export function FormStepOne() {
@@ -7,7 +8,7 @@ export function FormStepOne() {
       <Text style={styles.title}>
         FormStepOne 
       </Text>
-      <Input />
+      <Input icon="user" />
     </View>
   );
 }
