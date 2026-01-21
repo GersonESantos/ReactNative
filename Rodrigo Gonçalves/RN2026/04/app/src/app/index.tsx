@@ -1,4 +1,5 @@
 import { View, Text, StyleSheet, Image} from "react-native";
+import { Input } from "@/components/Input";
 export default function Index() {
   return (
     <View style={styles.container}>
@@ -8,6 +9,10 @@ export default function Index() {
         />
       <Text style={styles.title}>Entrar</Text>
       <Text style={styles.subtitle}>Acesse sua conta com email e senha</Text>
+      <View style={styles.form}> 
+        <Input placeholder="E-mail"/>
+        <Input placeholder="Senha"/>
+      </View>
     </View>
   );
 }
@@ -32,8 +37,11 @@ const styles = StyleSheet.create({
     subtitle:{
         fontSize: 16,
         color: "#666",
-    },  
-    
-  
+    }, 
+    form:{
+        width: "80%",
+        marginTop: 24,
+        gap: 12,
+    },   
 });
 //# sourceMappingURL=index.js.map
